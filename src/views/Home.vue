@@ -10,19 +10,11 @@
         />
       </v-col>
 
-      <v-col class="mb-4">
-        <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to Liggesmeyer.net
-        </h1>
-      </v-col>
-
       <v-col
           class="mb-5"
           cols="12"
       >
-        <v-card>
-          <v-card-text>Test</v-card-text>
-        </v-card>
+        <person-card></person-card>
       </v-col>
 
       <v-col
@@ -72,7 +64,9 @@
 
 <script>
 
+  import PersonCard from "@/components/PersonCard";
   export default {
-    name: 'Home'
+    name: 'Home',
+    components: {PersonCard}
   }
 </script>
