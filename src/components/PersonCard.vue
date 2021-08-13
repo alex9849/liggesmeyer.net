@@ -22,7 +22,7 @@
         </div>
         <div class="flex-grow-1"></div>
         <div class="d-flex flex-row">
-          <div class="me-1" v-for="link in value.links" :key="link">
+          <div class="me-1" v-for="(link, i) in value.links" :key="i">
             <v-btn icon outlined
                    color="black"
                    :href="link.href"

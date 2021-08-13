@@ -14,7 +14,7 @@
           class="mb-5"
           cols="12"
       >
-        <person-card v-for="person in persons" :value="person" :key="person"></person-card>
+        <person-card v-for="(person, i) in persons" :value="person" :key="i"></person-card>
       </v-col>
 
       <v-col
