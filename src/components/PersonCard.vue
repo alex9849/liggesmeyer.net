@@ -4,29 +4,51 @@
       max-width="500"
       outlined
   >
-    <v-row class="ma-1">
-      <v-col cols="4">
+    <div class="row ma-0">
+      <div class="col-4">
         <v-avatar
             size="100%"
         >
           <v-img src="../assets/ALiggesmeyer-Profil.jpg"></v-img>
         </v-avatar>
-      </v-col>
-      <v-col cols="8" class="pa-2" align="left">
-        <v-card-title class="text-h5 text--primary pa-0"
+      </div>
+      <div class="pa-2 col-8 d-flex flex-column" align="left">
+        <div class="text-h5 text--primary pa-0"
         >
-          Alexander Liggesmeyer
-        </v-card-title>
-        <v-card-subtitle style="color: #666666">Student</v-card-subtitle>
-      </v-col>
+          {{ value.name }}
+        </div>
+        <div style="color: #666666">
+          {{ value.subtitle }}
+        </div>
+        <div class="flex-grow-1"></div>
+        <div class="d-flex flex-row">
+          <div class="me-1" v-for="link in value.links" :key="link">
+            <v-btn icon outlined
+                   color="black"
+                   :href="link.href"
+                   target="_blank"
+            >
+              <v-icon>
+                {{ link.icon }}
+              </v-icon>
+            </v-btn>
+          </div>
+        </div>
+      </div>
 
-    </v-row>
+    </div>
   </v-card>
 </template>
 
 <script>
 export default {
-  name: "PersonCard"
+  name: "PersonCard",
+  props: {
+    value: {
+      type: Object,
+      required: true
+    }
+  }
 }
 </script>
 
