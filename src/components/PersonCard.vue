@@ -5,14 +5,14 @@
       outlined
   >
     <div class="row ma-0">
-      <div class="col-4">
+      <div class="col-12 col-sm-4">
         <v-avatar
             size="100%"
         >
           <v-img src="../assets/ALiggesmeyer-Profil.jpg"></v-img>
         </v-avatar>
       </div>
-      <div class="pa-2 col-8 d-flex flex-column" align="left">
+      <div class="pa-2 col-12 col-sm-8 d-flex flex-column" align="left">
         <div class="text-h5 text--primary pa-0"
         >
           {{ value.name }}
