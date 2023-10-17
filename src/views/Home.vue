@@ -83,14 +83,6 @@ export default {
           icon: mdiWeatherCloudy,
           href: 'https://cloud.liggesmeyer.net',
           text: 'Cloud'
-        }, {
-          icon: mdiGoogleController,
-          href: 'https://gaming.liggesmeyer.net/',
-          text: 'Gameserver panel'
-        }, {
-          icon: mdiCogRefreshOutline,
-          href: 'https://automate.liggesmeyer.net/',
-          text: 'Huginn'
         }
       ]
     }
