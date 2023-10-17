@@ -1,4 +1,4 @@
-FROM node:lts-alpine
+FROM node:14
 
 # install simple http server for serving static content
 RUN npm install -g http-server
@@ -7,7 +7,7 @@ RUN npm install -g http-server
 WORKDIR /app
 
 # copy both 'package.json' and 'package-lock.json' (if available)
-COPY package*.json ./
+COPY package.json ./
 
 # install project dependencies
 RUN npm install
