@@ -53,7 +53,7 @@
 <script>
 
 import PersonCard from "@/components/PersonCard";
-import {mdiGithub, mdiWeb, mdiLinkedin, mdiWeatherCloudy, mdiGoogleController, mdiCogRefreshOutline} from "@mdi/js";
+import {mdiGithub, mdiWeb, mdiLinkedin, mdiWeatherCloudy} from "@mdi/js";
 
 export default {
   name: 'Home',
